@@ -1,0 +1,39 @@
+BONNEL NOAH
+BOT DISCORD NODE
+
+Bonjour dans ce README vous trouverez les informations nécessaires pour lancer le bot Discord Node.js.
+
+Ci-dessous, la liste des commandes implémentées dans le bot Discord :
+
+echo :
+
+Cette commande permet de renvoyer un input spécifié par l'utilisateur. Si aucun input n'est fourni, elle renvoie un message vide.
+
+server :
+
+En utilisant cette commande, le nom du serveur ainsi que le nombre de membres présents sur celui-ci sont affichés.
+
+user :
+
+En exécutant cette commande, le nom de l'utilisateur qui l'a appelée ainsi que sa date d'arrivée sur le serveur sont retournés.
+
+info :
+
+Cette commande possède deux sous-commandes : 'user' et 'server'. Si 'server' est spécifié, les mêmes informations que la commande 'server' sont renvoyées. Si 'user' est spécifié, les mêmes informations que la commande 'user' sont retournées. Si un pseudo est passé en option avec la sous-commande, les informations sur cet utilisateur sont fournies, sinon les informations sont sur l'utilisateur ayant lancé la commande.
+
+cat :
+
+Cette commande fait appel à l'API "Random Cat" pour récupérer une image aléatoire de chat. Elle utilise la bibliothèque undici pour effectuer des requêtes HTTP. L'image de chat récupérée est envoyée en réponse à l'utilisateur qui a lancé la commande.
+
+urban :
+
+Cette commande utilise l'API d'Urban Dictionary pour rechercher la définition d'un terme spécifié. Elle construit l'URL de l'API en ajoutant le terme à chercher à la fin de l'URL de base (https://api.urbandictionary.com/v0/define?). La définition du terme est renvoyée en réponse à l'utilisateur.
+
+pfc :
+
+Cette commande permet de jouer à Pierre-Feuille-Ciseaux contre le bot. L'utilisateur doit spécifier son choix parmi les trois options disponibles. Le bot choisit aléatoirement une option et le résultat de la partie est renvoyé.
+
+pokemon:
+
+Cette commande utilise l'API "PokeAPI" pour récupérer les informations d'un Pokémon spécifié. Elle construit l'URL de l'API en ajoutant le nom du Pokémon à chercher à la fin de l'URL de base (https://pokeapi.co/api/v2/pokemon/). Les informations du Pokémon sont renvoyées en réponse à l'utilisateur.
+Le nom du pokemon doit être en anglais et sans majuscule pour que la commande puisse fonctionner.
