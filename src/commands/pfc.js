@@ -6,9 +6,7 @@ module.exports = {
         .setDescription('Joue à pierre-feuille-ciseaux avec le bot.'),
     async execute(interaction) {
         try {
-            // Choix possibles
             const choices = ['Pierre', 'Feuille', 'Ciseaux'];
-            // Génération d'un choix aléatoire
             const randomChoice = choices[Math.floor(Math.random() * choices.length)];
             await interaction.reply(`Le bot choisit : ${randomChoice}`);
         } catch (error) {

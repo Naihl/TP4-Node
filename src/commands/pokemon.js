@@ -16,9 +16,17 @@ module.exports = {
             const data = await response.json();
 
             if (response.ok) {
-                const stats = data.stats.map(stat => `${stat.stat.name}: ${stat.base_stat}`).join('\n');
-                const message = `**Statistiques de ${pokemonName}:**\n${stats}`;
-                await interaction.reply(message);
+                const stats = data.stats.map(stat => `**${stat.stat.name}:** ${stat.base_stat}`).join('\n');
+                const imageUrl = data.sprites.front_default; 
+
+                const embed = {
+                    color: 0x0099ff,
+                    title: `Statistiques de ${pokemonName}`,
+                    thumbnail: { url: imageUrl },
+                    description: stats,
+                };
+
+                await interaction.reply({ embeds: [embed] });
             } else {
                 await interaction.reply(`Le Pokémon "${pokemonName}" n'a pas été trouvé.`);
             }
